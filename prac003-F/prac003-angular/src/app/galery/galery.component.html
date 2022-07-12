@@ -1,0 +1,82 @@
+<!--{{negocio}}-->
+<!--******* Contenedor de tipos de gastos e informacion ********-->
+<h2 class="text-center">Informacion de Gastos</h2>
+<hr>
+<div class="container w-100">
+<ul>
+    <li *ngFor="let deducible of deducibles" style="list-style: none">
+        <div class="container bg-light border border-secondary rounded m-4 p-3 ">
+            <h3 class="text-primary mb-0">{{deducible}}</h3> <br>
+                <span>Descripcion deducible: </span>
+                <span class="fw-bold">{{deducible}}</span>
+                <form>
+                    <button (click)="informacion(deducible)" class="btn btn-primary me-2 mt-3">Informacion</button>
+                    <button (click)="borrarDeducible(deducible)" class="btn btn-warning ms-2 mt-3">Borrar</button>
+                </form>
+        </div>
+    </li>
+</ul>
+</div>
+
+<!--
+<div class="container w-100">
+<div class="container mw-25 bg-light border border-secondary rounded m-4 p-3 ">
+    <h3 class="text-primary mb-0">Vivienda</h3> <br>
+        <span>Descripcion deducible: </span>
+        <span class="fw-bold">Vivienda</span>
+        <form>
+            <button class="btn btn-primary me-2 mt-3">Informacion</button>
+            <button class="btn btn-secondary ms-2 mt-3">Borrar</button>
+        </form>
+</div>
+
+<div class="container bg-light border border-secondary rounded m-4 p-3 ">
+    <h3 class="text-primary mb-0">Educacion</h3> <br>
+        <span>Descripcion deducible: </span>
+        <span class="fw-bold">Educacion</span>
+        <form>
+            <button class="btn btn-primary me-2 mt-3">Informacion</button>
+            <button class="btn btn-secondary ms-2 mt-3">Borrar</button>
+        </form>
+</div>
+
+<div class="container bg-light border border-secondary rounded m-4 p-3 ">
+    <h3 class="text-primary mb-0">Alimentacion</h3> <br>
+        <span>Descripcion deducible: </span>
+        <span class="fw-bold">Alimentacion</span>
+        <form>
+            <button class="btn btn-primary me-2 mt-3">Informacion</button>
+            <button class="btn btn-secondary ms-2 mt-3">Borrar</button>
+        </form>
+</div>
+
+<div class="container bg-light border border-secondary rounded m-4 p-3 ">
+    <h3 class="text-primary mb-0">Vestimenta</h3> <br>
+        <span>Descripcion deducible: </span>
+        <span class="fw-bold">Vestimenta</span>
+        <form>
+            <button class="btn btn-primary me-2 mt-3">Informacion</button>
+            <button class="btn btn-secondary ms-2 mt-3">Borrar</button>
+        </form>
+</div>
+
+<div class="container bg-light border border-secondary rounded m-4 p-3 ">
+    <h3 class="text-primary mb-0">Turismo</h3> <br>
+        <span>Descripcion deducible: </span>
+        <span class="fw-bold">Turismo</span>
+        <form>
+            <button class="btn btn-primary me-2 mt-3">Informacion</button>
+            <button class="btn btn-secondary ms-2 mt-3">Borrar</button>
+        </form>
+</div>
+<div class="container bg-light border border-secondary rounded m-4 p-3 ">
+    <h3 class="text-primary mb-0">Salud</h3> <br>
+        <span>Descripcion deducible: </span>
+        <span class="fw-bold">Salud</span>
+        <form>
+            <button class="btn btn-primary me-2 mt-3">Informacion</button>
+            <button class="btn btn-secondary ms-2 mt-3">Borrar</button>
+        </form>
+</div>
+</div>
+-->
